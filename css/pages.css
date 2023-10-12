@@ -85,6 +85,8 @@ header {
   color: #66E7C8;
 }
 
+
+
 /*main*/
 
 .main {
@@ -215,7 +217,7 @@ h1 {
 .container-card {
   width: 100%;
 
-  max-width: 1100px;
+  max-width: 1080px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -402,39 +404,34 @@ flex-flow: nowrap;
 
 /*footer*/
 
-.footer {
+.footer{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 200px;
-  padding: 2em;
+  height: 100px;
+  padding: 2em; 
   background-color: aqua;
 }
 
-.footer-content h2 {
-  font-size: 3em;
-}
 
-.footer-content h5 {
-  font-size: 1.5em;
-  text-align: center;
-}
-
-.sotial-networks {
-  width: 300px;
-  height: 20px;
-  display: flex;
-  justify-content: space-evenly;
+.sotial-networks ul li {
+  width: 20px;
   margin-top: 1em;
+  list-style: none;
+  flex-direction: column;
+  display: inline;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  display: inline-block;
+
 
 }
 
 
-.sotial-networks i {
-  font-size: 1.5em;
-}
+
 
 
 .fixed {
@@ -451,3 +448,14 @@ flex-flow: nowrap;
 }
 
 
+@media screen (min-width: 1024px) {
+  
+  header{
+    flex-direction: row;
+  }
+  header nav ul{
+    display: flex;
+    justify-content:space-between;
+    gap: 10px;
+  }
+}
