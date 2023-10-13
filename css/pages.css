@@ -399,8 +399,8 @@ flex-flow: nowrap;
 @media screen and (max-width: 1024px){
 
   .main{
-    grid-template-columns: repeat:(1, 1fr);
-    align-items: center ;
+    grid-template-columns: repeat(1, 1fr);
+    align-items:center;
   }
 
 }
@@ -408,7 +408,7 @@ flex-flow: nowrap;
 @media screen and (max-width: 768px){
 
   .main{
-  grid-template-columns: repeat:(1, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   align-items: center ;
 }
   
