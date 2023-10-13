@@ -1,76 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>María Belén Satulovsky</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com"crossorigin>
-<link href="https: //fonts.googleapis.com/css2? family= Mooli & family= Poppins:wght@200;400 & display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? family= Mooli & family= Poppins:wght@200;400 & display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-<link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/pages.css">
 </head>
 
 
 <body>
 
-<div class="wrapper">
-    <header>
-
-    <nav class="navbar">
-        <div>
-            <img class="logo" src="./assets/logo.png.png">
-        </div>
-        <ul class="menu">
-            <li><a href="./index.html" class="active">Inicio</a></li>
-            <li><a href="./pages/quiensoy.html">Quien Soy</a></li>
-            <li><a href="./pages/portafolio.html">Portafolio</a></li>
-            <li><a href="./pages/contacto.html">Contacto</a></li>
-        </ul>
-        </nav>
-    </header>
-
-    <main class="main">
-        <div class="info-content">
-        <h1>I'm <span>María Belén</span> Satulovsky</h1>
-        <p>Periodista de videojuegos y creadora de contenidos</p>
-        <a download href="./docs/cv-docs.pdf"><button class="download-cv">Download CV</button></a>
-        </div>
-        <img class="foto-perfil"src="./assets/foto-perfil.png" alt="foto-perfil">
-    </div>
-
-</main>
-
-
     
-    <footer class="footer"> 
-<div class="sotial-networks">
-        <ul>
-    <li><a href="https://www.instagram.com/belusatulovsky/" target="_blank"><img src="./assets/instagram.svg" alt="Instagram"> </a> </li>
-        
-        <li> <a href="https://www.tiktok.com/@belusatulovsky" target="_blank"> <img src="./assets/tiktok.svg" alt="tiktok"> </a> </li>
+        <header>
 
-        <li> <a href="https://www.linkedin.com/in/mar%C3%ADa-bel%C3%A9n-satulovsky/" target="_blank"><img src="./assets/linkedin-in.svg" alt="linkedin"> </a></li>
+            <nav class="navbar navbar-dark bg-dark fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Welcome</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                        aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header">
+                        
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/quiensoy.html">About Me</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./pages/portafolio.html">Portfolio</a></li>
+                                        <li><a class="dropdown-item" href="./pages/contacto.html">Contact Me</a></li>
+                                        
+                            
+                            </ul>
+                            <form class="d-flex mt-3" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-success" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
 
 
+        </header>
+        <main class="container-fluid">
+            <div class="row">
+        <div class="wrapper">
 
-    </ul>
+                <container class="main" class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="info-content" class="col-sm-12 col-md-6 col-lg-4">
+                        <h1>I'm <span>María Belén</span> Satulovsky</h1>
+                        <p>Periodista de videojuegos y creadora de contenidos</p>
+                        <a download href="./docs/cv-docs.pdf"><button class="download-cv">Download CV</button></a>
+                    </div>
+
+                    <img class="img-fluid" class="foto-perfil" src="./assets/foto-perfil.png" alt="foto-perfil">
+
+            </div>
     </div>
-        
+    </main>
+
+
+
+    <footer class="footer" class="container-fluid">
+        <div class="row">
+            <div class="sotial-networks" class="col-sm-12 col-md-6 col-lg-4">
+                <ul>
+                    <li><a href="https://www.instagram.com/belusatulovsky/" target="_blank"><img
+                                src="./assets/instagram.svg" alt="Instagram"> </a> </li>
+
+                    <li> <a href="https://www.tiktok.com/@belusatulovsky" target="_blank"> <img
+                                src="./assets/tiktok.svg" alt="tiktok"> </a> </li>
+
+                    <li> <a href="https://www.linkedin.com/in/mar%C3%ADa-bel%C3%A9n-satulovsky/" target="_blank"><img
+                                src="./assets/linkedin-in.svg" alt="linkedin"> </a></li>
+
+
+
+                </ul>
+            </div>
+        </div>
 
         <div class="fixed">
             <a href="https://walink.co/bf7b75" target="_blank"><img src="assets/whatsapp.svg" alt="whatsapp"></a>
-            </div>
+        </div>
 
         </div>
 
-    
+
 
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
 
-    </html>
+</html>
