@@ -1,0 +1,284 @@
+
+
+/*Estilos responsive*/
+
+
+/*---tablet---*/
+
+@media screen and (max-width: 1024px){
+
+
+        main{
+                .row{
+                .wrapper{
+
+                .main{
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    align-items:center;
+
+                img{ 
+                    height: 420px;
+                    width: 350px;
+                                }
+                            }
+                }
+            }
+        }
+            
+    
+    
+
+
+
+                main{
+                    .wrapper2{
+                        display: grid;
+                        grid-template-columns: repeat(2,1fr);
+                        justify-content: center;
+                            
+                                img{
+                                    height: 530px;
+                                    width: 450px;
+                                    }
+                            
+                                }
+                            }
+
+
+
+
+                            main{
+
+                                .wrapper{
+                                    
+                                .portfolio{
+                            
+                                        .container-card{
+                                            display: grid;
+                                            grid-template-columns: repeat(1,1fr);
+                                            width: 50%;
+                            
+                                            .video-youtube{
+                                                .card{ 
+                                                
+                                                    iframe{ 
+                                                        width: 100%;
+                                                        height: 300px;}
+                                            
+                                                                    }
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+
+
+
+                            main{
+
+                                
+                                    .container-contact{
+                                        gap: 15px;
+                                        display: grid;
+                                        grid-template-columns: repeat(2,1fr); 
+                            
+                                        img{   
+                                            height: 430px;
+                                            width: 310px;
+                                            display: grid;
+                                            justify-content: center;
+                                            margin: auto;
+                            
+                                        }
+                            
+                                        .contact-form{ 
+
+                                            h4{
+                                                text-align:justify;}
+                                    
+                            
+                                            
+                                                form{
+                                                    margin-top: 15px;
+                                                    text-align: center;
+                            
+                                                    input{
+                                                        justify-content: center;
+                                                        align-items: center;
+                            
+                                                            }  
+                            
+                                                    textarea{
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        }
+                            
+                                                        .btn-submit{
+                                                            height: auto;
+                                                            width: 100px;
+                                                                }
+                                                        }
+                            
+                                            }
+                            
+                                        }
+                                        
+                                        
+                            
+                            }
+                            
+                            
+                } 
+    
+
+    /*---mobile----*/
+    
+    @media screen and (max-width: 768px){
+    
+
+    
+                    main{
+                        .row{
+                        .wrapper{
+        
+                        .main{
+                            display: grid;
+                            grid-template-columns: repeat(1, 1fr);
+                            align-items: center ;
+        
+                        img{ 
+                            height: 430px;
+                            width: 450px;
+                                        }
+                                    }
+                        }
+                    }
+                }    
+
+    
+    .fixed{
+        width: 10%;
+    }
+    
+    
+
+    
+
+    
+    
+
+                        main{
+                            .wrapper2{
+                                display: grid;
+                                grid-template-columns: repeat(1,1fr);
+                                justify-content: center;
+                                height:auto;  
+                                    
+                                        img{
+                                            height: 330px;
+                                            width: 310px;
+                                            justify-items: center;
+                                            display: block;
+                                            margin: auto;
+                                            margin-top: 15px;
+                                            }
+                                    
+                                        }
+                                    }
+
+
+
+
+                                    main{
+
+                                        .wrapper{
+                                            
+                                        .portfolio{
+                                    
+                                                .container-card{
+                                                    display: grid;
+                                                    grid-template-columns: repeat(1,1fr);
+                                                    width: 50%;
+                                    
+                                                    .video-youtube{
+                                                        .card{ 
+                                                        
+                                                            iframe{ 
+                                                                width: 100%;
+                                                                height: 100px;}
+                                                    
+                                                                            }
+        
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+
+
+
+                                    main{
+
+                                
+                                        .container-contact{
+                                            display: flex;
+                                            flex-direction: column;
+                                
+                                            img{   
+                                                height: 430px;
+                                                width: 310px;
+                                                display: flex;
+                                                justify-content: center;
+                                                display: block;
+                                                margin: auto;
+    
+                                
+                                            }
+                                
+                                            .contact-form{ 
+    
+                                                h4{
+                                                    margin-top: 15px;
+                                                text-align: center;
+                                            }
+                                        
+                                
+                                                
+                                                    form{
+                                
+                                                        display: flex;
+                                                        
+                                                        width: 30vw;
+                                                        margin-top: 2em;
+                                
+                                                        input{
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            align-items: center;
+                                
+                                                                }  
+                                
+                                                        
+                                
+                                                            .btn-submit{
+                                                                height: auto;
+                                                                width: 100%;
+                                                                justify-content:center ;
+                                                                text-align: center;
+                                                                    }
+                                                            }
+                                
+                                                }
+                                
+                                            }
+                                
+                                
+                                }
+
+
+    
+    }

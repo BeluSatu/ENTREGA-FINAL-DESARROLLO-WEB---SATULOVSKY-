@@ -1,0 +1,22 @@
+@import "utilities/reset";
+@import "components/html";
+@import "./utilities/variables";
+@import "./utilities/list";
+@import "./utilities/mixins.scss";
+
+
+@import "pages/header";
+@import "pages/main-index";
+@import "pages/main-quiensoy";
+@import "pages/main-portfolio";
+@import "./pages/main-contact";
+@import "components/footer";
+@import "./utilities/media-queries";
+
+
+
+
+
+html{
+    border: solid red;
+}
