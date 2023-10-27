@@ -20,7 +20,7 @@ header {
 /*Estilo Main*/
 main .row .wrapper {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-color: #2b3058;
   color: #fff;
   margin-top: 3rem;
@@ -55,10 +55,72 @@ main .row .wrapper .main .info-content a button:hover {
   background-color: azure;
   box-shadow: none;
 }
-main .row .wrapper .main img {
+main .row .wrapper img {
   border: 7px solid aqua;
   width: 450px;
   height: 520px;
+}
+main .service {
+  width: 100%;
+  padding: 100px 0px;
+  background-color: azure;
+}
+main .service .title-service h2 {
+  font-size: 2.5em;
+  color: #191919;
+  margin-left: 8px;
+  margin-top: 5px;
+  text-align: justify;
+}
+main .service .title-service .divider {
+  height: 4px;
+  width: 70px;
+  background-color: aqua;
+  margin-top: 3px;
+  margin-bottom: 2em;
+  margin-left: 8px;
+}
+main .service .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+main .service .box .card-box {
+  height: auto;
+  width: auto;
+  padding: 20px 35px;
+  background-color: #191919;
+  box-shadow: 0 10px 12px rgba(5, 210, 242, 0.2);
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+main .service .box .card-box:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+main .service .box .card-box h3 {
+  color: #fff;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+main .service .box .card-box p {
+  color: aqua;
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 25px;
+}
+main .service .box .card-box .card-1 iframe {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 /*Main About Me*/
@@ -140,69 +202,248 @@ main .portfolio .divider {
   margin-bottom: 2em;
   margin-left: 8px;
 }
-main .portfolio .title-cards {
-  width: 100%;
-  max-width: 1080px;
-  margin: auto;
-  padding: 0px;
-  margin-top: 20px;
-  text-align: center;
-  color: #fafafa;
-  margin-bottom: 200px;
-  margin-top: -10px;
-  font-size: large;
+main .portfolio .blog-card {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.6%;
+  background: #fff;
+  line-height: 1.4;
+  font-family: sans-serif;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 0;
 }
-main .portfolio .container-card {
+main .portfolio .blog-card a {
+  color: inherit;
+}
+main .portfolio .blog-card a:hover {
+  color: #5ad67d;
+}
+main .portfolio .blog-card:hover .photo {
+  transform: scale(1.3) rotate(3deg);
+}
+main .portfolio .blog-card .meta {
+  position: relative;
+  z-index: 0;
+  height: 200px;
+}
+main .portfolio .blog-card .photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.2s;
+}
+main .portfolio .blog-card .details,
+main .portfolio .blog-card .details ul {
+  margin: auto;
+  padding: 0;
+  list-style: none;
+}
+main .portfolio .blog-card .details {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  margin: auto;
+  transition: left 0.2s;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 10px;
   width: 100%;
+  font-size: 0.9rem;
+}
+main .portfolio .blog-card .details a {
+  text-decoration: dotted underline;
+}
+main .portfolio .blog-card .details ul li {
+  display: inline-block;
+}
+main .portfolio .blog-card .details .author:before {
+  font-family: FontAwesome;
+  margin-right: 10px;
+  content: "\f007";
+}
+main .portfolio .blog-card .details .date:before {
+  font-family: FontAwesome;
+  margin-right: 10px;
+  content: "\f133";
+}
+main .portfolio .blog-card .details .tags ul:before {
+  font-family: FontAwesome;
+  content: "\f02b";
+  margin-right: 10px;
+}
+main .portfolio .blog-card .details .tags li {
+  margin-right: 2px;
+}
+main .portfolio .blog-card .details .tags li:first-child {
+  margin-left: -4px;
+}
+main .portfolio .blog-card .description {
+  padding: 1rem;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+main .portfolio .blog-card .description h1,
+main .portfolio .blog-card .description h2 {
+  font-family: Poppins, sans-serif;
+}
+main .portfolio .blog-card .description h1 {
+  line-height: 1;
+  margin: 0;
+  font-size: 1.7rem;
+  color: #a2a2a2;
+}
+main .portfolio .blog-card .description h2 {
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #a2a2a2;
+  margin-top: 5px;
+}
+main .portfolio .blog-card .description .read-more {
+  text-align: right;
+}
+main .portfolio .blog-card .description .read-more a {
+  color: #5ad67d;
+  display: inline-block;
+  position: relative;
+}
+main .portfolio .blog-card .description .read-more a:after {
+  content: "\f061";
+  font-family: FontAwesome;
+  margin-left: -10px;
+  opacity: 0;
+  vertical-align: middle;
+  transition: margin 0.3s, opacity 0.3s;
+}
+main .portfolio .blog-card .description .read-more a:hover:after {
+  margin-left: 5px;
+  opacity: 1;
+}
+main .portfolio .blog-card p {
+  position: relative;
+  color: #706B7B;
+  margin: 1rem 0 0;
+}
+main .portfolio .blog-card p:first-of-type {
+  margin-top: 1.25rem;
+}
+main .portfolio .blog-card p:first-of-type:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  background: #5ad67d;
+  width: 35px;
+  top: -0.75rem;
+  border-radius: 3px;
+}
+main .portfolio .blog-card:hover .details {
+  left: 0%;
+}
+@media (min-width: 640px) {
+  main .portfolio .blog-card {
+    flex-direction: row;
+    max-width: 700px;
+  }
+  main .portfolio .blog-card .meta {
+    flex-basis: 40%;
+    height: auto;
+  }
+  main .portfolio .blog-card .description {
+    flex-basis: 60%;
+  }
+  main .portfolio .blog-card .description:before {
+    transform: skewX(-3deg);
+    content: "";
+    background: #fff;
+    width: 30px;
+    position: absolute;
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  main .portfolio .blog-card.alt {
+    flex-direction: row-reverse;
+  }
+  main .portfolio .blog-card.alt .description:before {
+    left: inherit;
+    right: -10px;
+    transform: skew(3deg);
+  }
+  main .portfolio .blog-card.alt .details {
+    padding-left: 25px;
+  }
+}
+main .portfolio .service {
+  width: 100%;
+  padding: 100px 0px;
+  background-color: azure;
+}
+main .portfolio .service .title-service h2 {
+  font-size: 2.5em;
+  color: #191919;
+  margin-left: 8px;
+  margin-top: 5px;
+  text-align: justify;
+}
+main .portfolio .service .title-service .divider {
+  height: 4px;
+  width: 70px;
+  background-color: aqua;
+  margin-top: 3px;
+  margin-bottom: 2em;
+  margin-left: 8px;
+}
+main .portfolio .service .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+main .portfolio .service .box .card-box {
+  height: auto;
+  width: auto;
+  padding: 20px 35px;
+  background-color: #191919;
+  box-shadow: 0 10px 12px rgba(5, 210, 242, 0.2);
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+main .portfolio .service .box .card-box:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+main .portfolio .service .box .card-box h3 {
+  color: #fff;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+main .portfolio .service .box .card-box p {
+  color: aqua;
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 25px;
+}
+main .portfolio .service .box .card-box .card-1 iframe {
+  width: 100%;
+  height: auto;
   margin: auto;
   display: grid;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-}
-main .portfolio .container-card .video-youtube .card {
-  border-radius: 6px;
-  overflow: hidden;
-  background: #12131a;
-  box-shadow: 0 10px 12px rgba(5, 210, 242, 0.2);
-  transition: all 400ms ease-out;
-  cursor: default;
-  margin-bottom: 100px;
-  margin-top: -50px;
-}
-main .portfolio .container-card .video-youtube .card:hover {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-  transform: translateY(-3%);
-}
-main .portfolio .container-card .video-youtube .card .contenido-card {
-  padding: 15px;
-  text-align: center;
-}
-main .portfolio .container-card .video-youtube .card .contenido-card h3 {
-  margin-bottom: 15px;
-  color: #f4f2f2;
-}
-main .portfolio .container-card .video-youtube .card .contenido-card p {
-  color: #fafafa;
-}
-main .portfolio .container-card .video-youtube .card .contenido-card .button-content {
-  display: inline-block;
-  margin-top: 10px;
-  text-decoration: none;
-  justify-content: center;
-  color: #020202;
-  padding: 10px 20px;
-  background-color: aqua;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  -webkit-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
-  -moz-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
-  box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
-}
-main .portfolio .container-card .video-youtube .card .contenido-card .button-content:hover {
-  background-color: azure;
-  box-shadow: none;
 }
 
 /*Estilos contacto*/
@@ -242,12 +483,14 @@ main .container-contact img {
 main .container-contact .contact-form {
   margin-top: 0;
   margin-left: 8em;
+  text-align: center;
 }
 main .container-contact .contact-form form {
   display: flex;
   flex-direction: column;
-  width: 30vw;
-  margin-top: 2em;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 main .container-contact .contact-form form input {
   padding: 10px 20px;
@@ -317,58 +560,70 @@ main .container-contact .contact-form form button {
     height: 420px;
     width: 350px;
   }
-  main .wrapper2 {
+  main .service {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: azure;
+  }
+  main .service .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+  }
+  main main .wrapper2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
   }
-  main .wrapper2 img {
+  main main .wrapper2 img {
     height: 530px;
     width: 450px;
   }
-  main .wrapper .portfolio .container-card {
+  main main .wrapper .portfolio .container-card {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     width: 50%;
   }
-  main .wrapper .portfolio .container-card .video-youtube .card iframe {
+  main main .wrapper .portfolio .container-card .video-youtube .card iframe {
     width: 100%;
     height: 300px;
   }
-  main .container-contact {
+  main main .container-contact {
     gap: 15px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  main .container-contact img {
+  main main .container-contact img {
     height: 430px;
     width: 310px;
     display: grid;
     justify-content: center;
     margin: auto;
   }
-  main .container-contact .contact-form h4 {
+  main main .container-contact .contact-form h4 {
     text-align: justify;
   }
-  main .container-contact .contact-form form {
+  main main .container-contact .contact-form form {
     margin-top: 15px;
     text-align: center;
   }
-  main .container-contact .contact-form form input {
+  main main .container-contact .contact-form form input {
     justify-content: center;
     align-items: center;
   }
-  main .container-contact .contact-form form textarea {
+  main main .container-contact .contact-form form textarea {
     justify-content: center;
     align-items: center;
   }
-  main .container-contact .contact-form form .btn-submit {
+  main main .container-contact .contact-form form .btn-submit {
     height: auto;
     width: 100px;
   }
+  /*---mobile----*/
 }
-/*---mobile----*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) and (max-width: 768px) {
   main .row .wrapper .main {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -377,6 +632,21 @@ main .container-contact .contact-form form button {
   main .row .wrapper .main img {
     height: 430px;
     width: 450px;
+  }
+  main .service {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: azure;
+  }
+  main .service .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+  }
+  main .service .card-box {
+    width: 50%;
   }
   .fixed {
     width: 10%;
@@ -422,8 +692,8 @@ main .container-contact .contact-form form button {
   }
   main .container-contact .contact-form form {
     display: flex;
+    flex-direction: column;
     width: 30vw;
-    margin-top: 2em;
   }
   main .container-contact .contact-form form input {
     display: flex;
@@ -436,9 +706,6 @@ main .container-contact .contact-form form button {
     justify-content: center;
     text-align: center;
   }
-}
-html {
-  border: solid red;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -46,15 +46,16 @@ main{
             .contact-form{ 
                         margin-top: 0;
                         margin-left: 8em;
+                        text-align: center;
 
                 
                     form{
 
                         display: flex;
                         flex-direction: column;
-                        width: 30vw;
-                        margin-top: 2em;
-
+                        width: 100%;
+                        justify-content: center;
+                        align-items: center;
                         input{
                             padding: 10px 20px;
                             margin-bottom: 1em;

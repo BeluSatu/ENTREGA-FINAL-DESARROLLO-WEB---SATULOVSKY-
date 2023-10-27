@@ -16,16 +16,35 @@
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
                     align-items:center;
-
+    
                 img{ 
                     height: 420px;
                     width: 350px;
+                    
                                 }
                             }
                 }
             }
-        }
-            
+
+
+            .service{
+                width: 100%;
+                padding: 100px 0px;
+                background-color: nth($list: $colors, $n:3 );
+
+    
+    
+
+
+            .box{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 400px;
+
+                                        }
+                                            }
     
     
 
@@ -149,6 +168,12 @@
                             grid-template-columns: repeat(1, 1fr);
                             align-items: center ;
         
+
+
+
+
+
+                            
                         img{ 
                             height: 430px;
                             width: 450px;
@@ -156,6 +181,34 @@
                                     }
                         }
                     }
+
+                    .service{
+                        width: 100%;
+                        padding: 100px 0px;
+                        background-color: nth($list: $colors, $n:3 );
+        
+            
+            
+        
+        
+                    .box{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            min-height: 400px;}
+
+
+
+                            .card-box{
+                                width: 50%;
+                            }
+                                                    }
+
+
+
+
+
                 }    
 
     
@@ -243,7 +296,7 @@
     
                                                 h4{
                                                     margin-top: 15px;
-                                                text-align: center;
+                                                    text-align: center;
                                             }
                                         
                                 
@@ -251,9 +304,8 @@
                                                     form{
                                 
                                                         display: flex;
-                                                        
+                                                        flex-direction: column;
                                                         width: 30vw;
-                                                        margin-top: 2em;
                                 
                                                         input{
                                                             display: flex;
@@ -282,3 +334,6 @@
 
     
     }
+}
+
+
