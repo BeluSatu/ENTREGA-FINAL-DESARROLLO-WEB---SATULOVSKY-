@@ -161,7 +161,9 @@
     
                     main{
                         .row{
-                        .wrapper{
+                        .wrapper{display: grid;
+                            grid-template-columns: repeat(1, 1fr);
+                            align-items: center ;
         
                         .main{
                             display: grid;
@@ -175,8 +177,8 @@
 
                             
                         img{ 
-                            height: 430px;
-                            width: 450px;
+                            height: 380px;
+                            width: 400px;
                                         }
                                     }
                         }

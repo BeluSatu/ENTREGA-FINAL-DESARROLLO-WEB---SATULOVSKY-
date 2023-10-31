@@ -624,14 +624,19 @@ main .container-contact .contact-form form button {
   /*---mobile----*/
 }
 @media screen and (max-width: 1024px) and (max-width: 768px) {
+  main .row .wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
   main .row .wrapper .main {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
   }
   main .row .wrapper .main img {
-    height: 430px;
-    width: 450px;
+    height: 380px;
+    width: 400px;
   }
   main .service {
     width: 100%;
