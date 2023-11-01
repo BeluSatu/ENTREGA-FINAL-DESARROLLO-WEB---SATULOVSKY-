@@ -482,8 +482,8 @@ main .container-contact img {
 }
 main .container-contact .contact-form {
   margin-top: 0;
-  margin-left: 8em;
   text-align: center;
+  width: 100%;
 }
 main .container-contact .contact-form form {
   display: flex;
@@ -522,15 +522,12 @@ main .container-contact .contact-form form button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100px;
   background-color: aqua;
 }
 .footer .row .sotial-networks ul li {
   width: 20px;
   margin-top: 1em;
   list-style: none;
-  display: inline;
   margin-left: 10px;
   display: flex;
   flex-direction: column;
@@ -698,7 +695,6 @@ main .container-contact .contact-form form button {
   main .container-contact .contact-form form {
     display: flex;
     flex-direction: column;
-    width: 30vw;
   }
   main .container-contact .contact-form form input {
     display: flex;
@@ -707,7 +703,6 @@ main .container-contact .contact-form form button {
   }
   main .container-contact .contact-form form .btn-submit {
     height: auto;
-    width: 100%;
     justify-content: center;
     text-align: center;
   }
