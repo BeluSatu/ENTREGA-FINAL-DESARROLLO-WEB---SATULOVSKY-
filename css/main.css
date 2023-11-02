@@ -518,21 +518,59 @@ main .container-contact .contact-form form button {
 
 /*Estilos Footer*/
 .footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
   align-items: center;
+  justify-content: center;
   background-color: aqua;
 }
-.footer .row .sotial-networks ul li {
-  width: 20px;
-  margin-top: 1em;
-  list-style: none;
-  margin-left: 10px;
+.footer .row .sotial-networks {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  display: inline-block;
+  flex-wrap: wrap;
+}
+.footer .row .sotial-networks .icon {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+  border-radius: 20px;
+  transition: all 0.8s;
+  cursor: pointer;
+}
+.footer .row .sotial-networks .icon:hover {
+  background-color: #e60073;
+  box-shadow: 0 0 20px #e60073;
+}
+.footer .row .sotial-networks .icon:hover:nth-child(2) {
+  background-color: #141516;
+  box-shadow: 0 0 20px #191a1b;
+}
+.footer .row .sotial-networks .icon:hover:nth-child(3) {
+  background-color: #d32b25;
+  box-shadow: 0 0 20px #d32525;
+}
+.footer .row .sotial-networks .icon:hover:nth-child(4) {
+  background-color: #1da1f2;
+  box-shadow: 0 0 20px #1da1f2;
+}
+.footer .row .sotial-networks .icon svg {
+  stroke-dasharray: 150;
+  transition: all 0.8s ease-in-out;
+}
+.footer .row .sotial-networks .icon i {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.7rem;
+}
+.footer .row .sotial-networks .icon i:hover {
+  stroke-dasharray: 220;
 }
 .footer .row .fixed {
   position: fixed;
@@ -625,6 +663,7 @@ main .container-contact .contact-form form button {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
+    height: 800px;
   }
   main .row .wrapper .main {
     display: grid;
@@ -632,8 +671,8 @@ main .container-contact .contact-form form button {
     align-items: center;
   }
   main .row .wrapper .main img {
-    height: 380px;
-    width: 400px;
+    width: 380px;
+    height: 350px;
   }
   main .service {
     width: 100%;
@@ -705,6 +744,40 @@ main .container-contact .contact-form form button {
     height: auto;
     justify-content: center;
     text-align: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .footer {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+  }
+  .footer .row .sotial-networks {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .footer .row .icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    border-radius: 20px;
+    transition: all 0.8s;
+    cursor: pointer;
+  }
+  .footer .row .fixed {
+    position: fixed;
+    width: 50px;
+    bottom: 50px;
+    right: 20px;
+  }
+  .footer .row .fixed a img {
+    width: 30px;
+    right: 150px;
   }
 }
 

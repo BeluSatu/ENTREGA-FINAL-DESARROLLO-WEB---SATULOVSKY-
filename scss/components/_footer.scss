@@ -1,45 +1,93 @@
 /*Estilos Footer*/
 
 .footer{
-    @include flex (column,center);
+    display: grid;
     align-items: center;
-    
+    justify-content: center;
     background-color: nth($list: $colors, $n:4 );
-
+    
         .row{
                 .sotial-networks{
-                
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;    
 
-                    ul{
-                        li{ 
-                            width: 20px;
-                            margin-top: 1em;
-                            list-style: none;
-                            margin-left: 10px;
-                            @include flex (column,center);
-                            display: inline-block;
-                            
-                        }
+                    .icon {
+                        display: flex;
+                        justify-content: center;
+                        position: relative;
+                        width: 40px;
+                        height: 40px;
+                        margin: 20px;
+                        border-radius: 20px;
+                        transition: all .8s;
+                        cursor: pointer;
+
+                            &:hover{
+                            background-color: #e60073;
+                            box-shadow:  0 0 20px #e60073 ;
+                                                                }   
+
+                            &:hover:nth-child(2) {
+                            background-color: #141516;
+                            box-shadow:  0 0 20px #191a1b;
+                                                            }
+
+                            &:hover:nth-child(3) {
+                            background-color: #d32b25;
+                            box-shadow: 0 0 20px #d32525 ;
+                                                            }
+
+                            &:hover:nth-child(4) {
+                            background-color: #1da1f2;
+                            box-shadow:  0 0 20px #1da1f2 ;
+                                                                }
+
+                            svg  {
+                                stroke-dasharray: 150;
+                                transition: all .8s ease-in-out;
+                    
+                                                                }
+
+                                i {
+                                    color: #fff;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%,-50%);
+                                    font-size: 1.7rem;
+
+                                    &:hover{ stroke-dasharray: 220;}
+                                                                }
+
                     }
                 }
 
-                .fixed{
-                    position: fixed;
-                    width: 100px;
-                    bottom: 20px;
-                    right: 20px;
+
+
+
+
+
+
+                            .fixed{
+                                position: fixed;
+                                width: 100px;
+                                bottom: 20px;
+                                right: 20px;
 
                     
-                    a{
-                        img{
-                            width: 50px;
-                            right: 150px;
+                                a{
+                                        img{
+                                            width: 50px;
+                                            right: 150px;
+                                                            }
+                                    }
+
                         }
+
                     }
-
-                }
-
-        }
 
 }
 

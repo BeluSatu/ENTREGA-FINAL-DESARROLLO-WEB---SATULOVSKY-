@@ -164,6 +164,8 @@
                         .wrapper{display: grid;
                             grid-template-columns: repeat(1, 1fr);
                             align-items: center ;
+                            height: 800px;
+                            
         
                         .main{
                             display: grid;
@@ -177,8 +179,8 @@
 
                             
                         img{ 
-                            height: 380px;
-                            width: 400px;
+                                width: 380px;
+                                height: 350px;
                                         }
                                     }
                         }
@@ -333,6 +335,62 @@
 
     
     }
+
+
+        
+    .footer{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        background-color: nth($list: $colors, $n:4 );
+        
+            .row{
+                    .sotial-networks{
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-wrap: wrap; }
+                        
+                        .icon {
+                            
+                            position: relative;
+                            width: 40px;
+                            height: 40px;
+                            margin: 20px;
+                            border-radius: 20px;
+                            transition: all .8s;
+                            cursor: pointer; }
+
+
+                            .fixed{
+                                position: fixed;
+                                width: 50px;
+                                bottom: 50px;
+                                right: 20px;
+        
+                    
+                                a{
+                                        img{
+                                            width: 30px;
+                                            right: 150px;
+                                                            }
+                                    }
+        
+                        }
+        
+
+
+
+
+                        
+                        }
+
+                    }
+
+                
+
+
 
 
 
