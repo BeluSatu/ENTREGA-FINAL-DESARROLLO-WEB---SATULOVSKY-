@@ -236,7 +236,7 @@
             grid-template-columns: repeat(1,1fr);
             justify-content: center;
             align-items: center;
-            
+            height: auto;
                 
                     img{
                         height: 330px;
@@ -244,7 +244,7 @@
                         justify-items: center;
                         display: block;
                         margin: auto;
-                        margin-top: 15px;
+                        margin-top: 25px;
                         }
                         .about-info{ margin-bottom: 500px;
                             h2{
