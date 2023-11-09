@@ -6,8 +6,7 @@ main{
     .contact-section{
                         padding: 3em;
                         background-color:nth($list: $colors, $n:2 );
-                        color: #fff;
-                        height: 100vh;
+                        color: #fff;    
             
         .contact-heading{
 
@@ -34,9 +33,10 @@ main{
             display: flex;
             align-items: center;
             margin-top: 10em;
+            height: 80vh;
 
             img{   width: 490px;
-                height: 700px;
+                height: 580px;
                 bottom: 0;
                 box-shadow: 9px 9px 41px -10px rgba(0,0,0,0.82);
             -webkit-box-shadow: 9px 9px 41px -10px rgba(0,0,0,0.82);
