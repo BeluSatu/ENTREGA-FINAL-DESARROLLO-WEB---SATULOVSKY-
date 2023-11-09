@@ -20,12 +20,18 @@ header {
 /*Estilo Main*/
 main .row .wrapper {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background-color: #2b3058;
   color: #fff;
   margin-top: 3rem;
 }
-main .row .wrapper .main {
+main .row .wrapper .slides {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .row .wrapper .slides .main {
   margin: 0 auto;
   width: 80vw;
   height: 80vh;
@@ -34,13 +40,13 @@ main .row .wrapper .main {
   align-items: center;
   gap: 2em;
 }
-main .row .wrapper .main .info-content h1 {
+main .row .wrapper .slides .main .info-content h1 {
   font-size: 3em;
 }
-main .row .wrapper .main .info-content h1 span {
+main .row .wrapper .slides .main .info-content h1 span {
   color: aqua;
 }
-main .row .wrapper .main .info-content a button {
+main .row .wrapper .slides .main .info-content a button {
   padding: 10px 20px;
   background-color: aqua;
   border: none;
@@ -51,11 +57,11 @@ main .row .wrapper .main .info-content a button {
   -moz-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
   box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
 }
-main .row .wrapper .main .info-content a button:hover {
+main .row .wrapper .slides .main .info-content a button:hover {
   background-color: azure;
   box-shadow: none;
 }
-main .row .wrapper img {
+main .row .wrapper .slides img {
   border: 7px solid aqua;
   width: 450px;
   height: 520px;
@@ -65,14 +71,14 @@ main .service {
   padding: 100px 0px;
   background-color: azure;
 }
-main .service .title-service h2 {
+main .service .slides .title-service h2 {
   font-size: 2.5em;
   color: #191919;
   margin-left: 8px;
   margin-top: 5px;
   text-align: justify;
 }
-main .service .title-service .divider {
+main .service .slides .title-service .divider {
   height: 4px;
   width: 70px;
   background-color: aqua;
@@ -80,13 +86,13 @@ main .service .title-service .divider {
   margin-bottom: 2em;
   margin-left: 8px;
 }
-main .service .box {
+main .service .slides .box {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 400px;
 }
-main .service .box .card-box {
+main .service .slides .box .card-box {
   height: auto;
   width: auto;
   padding: 20px 35px;
@@ -98,22 +104,22 @@ main .service .box .card-box {
   overflow: hidden;
   text-align: center;
 }
-main .service .box .card-box:hover {
+main .service .slides .box .card-box:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-3%);
 }
-main .service .box .card-box h3 {
+main .service .slides .box .card-box h3 {
   color: #fff;
   font-size: 23px;
   margin-bottom: 15px;
 }
-main .service .box .card-box p {
+main .service .slides .box .card-box p {
   color: aqua;
   font-size: 16px;
   line-height: 27px;
   margin-bottom: 25px;
 }
-main .service .box .card-box .card-1 iframe {
+main .service .slides .box .card-box .card-1 iframe {
   width: 100%;
   height: auto;
   margin: auto;
@@ -158,21 +164,6 @@ main .wrapper2 .divider {
   margin-top: 3px;
   margin-bottom: 2em;
   margin-left: 8px;
-}
-main .wrapper2 button {
-  padding: 10px 20px;
-  background-color: aqua;
-  border: none;
-  border-radius: 20px;
-  margin-top: 10px;
-  cursor: pointer;
-  -webkit-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
-  -moz-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
-  box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
-}
-main .wrapper2 button:hover {
-  background-color: azure;
-  box-shadow: none;
 }
 
 /*Estilos Portfolio*/
@@ -451,6 +442,7 @@ main .contact-section {
   padding: 3em;
   background-color: #2b3058;
   color: #fff;
+  height: 100vh;
 }
 main .contact-section .contact-heading h2 {
   font-size: 2.5em;
@@ -586,12 +578,12 @@ main .container-contact .contact-form form button {
 /*Estilos responsive*/
 /*---tablet---*/
 @media screen and (max-width: 1024px) {
-  main .row .wrapper .main {
+  main .row .wrapper .slides .main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
-  main .row .wrapper .main img {
+  main .row .wrapper .slides .main img {
     height: 420px;
     width: 350px;
   }
@@ -663,14 +655,13 @@ main .container-contact .contact-form form button {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
-    height: 800px;
   }
-  main .row .wrapper .main {
+  main .row .wrapper .slides .main {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
   }
-  main .row .wrapper .main img {
+  main .row .wrapper .slides .main img {
     width: 380px;
     height: 350px;
   }
@@ -696,7 +687,7 @@ main .container-contact .contact-form form button {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
-    height: auto;
+    align-items: center;
   }
   main .wrapper2 img {
     height: 330px;
@@ -705,6 +696,14 @@ main .container-contact .contact-form form button {
     display: block;
     margin: auto;
     margin-top: 15px;
+  }
+  main .wrapper2 .about-info {
+    margin-bottom: 500px;
+  }
+  main .wrapper2 .about-info h2 {
+    font-size: 2em;
+    color: #191c32;
+    font-weight: 600;
   }
   main .wrapper .portfolio .container-card {
     display: grid;

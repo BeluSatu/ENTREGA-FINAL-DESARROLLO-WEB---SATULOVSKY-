@@ -12,6 +12,8 @@
                 .row{
                 .wrapper{
 
+                        .slides{
+                        
                 .main{
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
@@ -23,6 +25,7 @@
                     
                                 }
                             }
+                        }
                 }
             }
 
@@ -164,8 +167,8 @@
                         .wrapper{display: grid;
                             grid-template-columns: repeat(1, 1fr);
                             align-items: center ;
-                            height: 800px;
                             
+                            .slides{
         
                         .main{
                             display: grid;
@@ -181,7 +184,9 @@
                         img{ 
                                 width: 380px;
                                 height: 350px;
+
                                         }
+                                    }
                                     }
                         }
                     }
@@ -223,28 +228,35 @@
     
 
     
-
-    
     
 
-                        main{
-                            .wrapper2{
-                                display: grid;
-                                grid-template-columns: repeat(1,1fr);
-                                justify-content: center;
-                                height:auto;  
-                                    
-                                        img{
-                                            height: 330px;
-                                            width: 310px;
-                                            justify-items: center;
-                                            display: block;
-                                            margin: auto;
-                                            margin-top: 15px;
-                                            }
-                                    
-                                        }
-                                    }
+    main{
+        .wrapper2{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            justify-content: center;
+            align-items: center;
+            
+                
+                    img{
+                        height: 330px;
+                        width: 310px;
+                        justify-items: center;
+                        display: block;
+                        margin: auto;
+                        margin-top: 15px;
+                        }
+                        .about-info{ margin-bottom: 500px;
+                            h2{
+                                font-size: 2em;
+                                color: nth($list: $colors, $n:1);
+                                font-weight:600;
+                            }
+                        }
+
+
+                    }
+                }
 
 
 
@@ -343,6 +355,7 @@
         align-items: center;
         justify-content: center;
         background-color: nth($list: $colors, $n:4 );
+
         
             .row{
                     .sotial-networks{
