@@ -1,4 +1,5 @@
 /*reset*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -42,6 +43,7 @@ main .row .wrapper .slides .main {
 }
 main .row .wrapper .slides .main .info-content h1 {
   font-size: 3em;
+  color: #fff;
 }
 main .row .wrapper .slides .main .info-content h1 span {
   color: aqua;
@@ -129,6 +131,83 @@ main .service .slides .box .card-box .card-1 iframe {
   gap: 20px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper-press {
+  width: 100%;
+  background-color: #2b3058;
+  color: #fff;
+  margin-top: 3rem;
+}
+.wrapper-press .band {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+.wrapper-press .band .card {
+  background: white;
+  text-decoration: none;
+  color: #444;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
+  top: 0;
+  transition: all 0.1s ease-in;
+}
+.wrapper-press .band .card:hover {
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+.wrapper-press .band .card .thumb {
+  padding-bottom: 60%;
+  background-size: cover;
+  background-position: center center;
+}
+.wrapper-press .band .card article {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.wrapper-press .band .card article h2 {
+  font-size: 20px;
+  margin: 0;
+}
+.wrapper-press .band .card article span {
+  font-size: 16px;
+  color: #252525;
+  margin: 2em 0 0 0;
+}
+.wrapper-press .band .card article span p {
+  flex: 1;
+  line-height: 1.4;
+}
+.wrapper-press .band .card article a button {
+  padding: 10px 20px;
+  background-color: aqua;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+  -moz-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+  box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+}
+.wrapper-press .band .card article a button:hover {
+  background-color: azure;
+  box-shadow: none;
+}
+
 /*Main About Me*/
 main .wrapper2 {
   display: grid;
@@ -152,7 +231,7 @@ main .wrapper2 img {
 main .wrapper2 .about-info {
   padding: 3em;
 }
-main .wrapper2 .about-info h2 {
+main .wrapper2 .about-info h1 {
   font-size: 2em;
   color: #191c32;
   font-weight: 600;
@@ -179,7 +258,7 @@ main .portfolio .portfolio-heading {
   flex-direction: column;
   justify-content: center;
 }
-main .portfolio .portfolio-heading h2 {
+main .portfolio .portfolio-heading h1 {
   font-size: 2.5em;
   color: #fff;
   margin-left: 8px;
@@ -443,7 +522,7 @@ main .contact-section {
   background-color: #2b3058;
   color: #fff;
 }
-main .contact-section .contact-heading h2 {
+main .contact-section .contact-heading h1 {
   font-size: 2.5em;
   color: #fff;
   margin-left: 8px;
@@ -516,7 +595,6 @@ main .container-contact .contact-form form button {
   background-color: aqua;
 }
 .footer .row .sotial-networks {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -749,7 +827,7 @@ main .container-contact .contact-form form button {
 }
 @media screen and (max-width: 1024px) {
   .footer {
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: center;
     background-color: aqua;
@@ -779,6 +857,22 @@ main .container-contact .contact-form form button {
   .footer .row .fixed a img {
     width: 30px;
     right: 150px;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .band {
+    grid-template-columns: 1fr 1fr;
+  }
+  .item-1 {
+    grid-column: 1/span 2;
+  }
+  .item-1 h2 {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 850px) {
+  .band {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 

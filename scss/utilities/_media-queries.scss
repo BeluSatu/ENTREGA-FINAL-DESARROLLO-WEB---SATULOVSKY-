@@ -1,408 +1,415 @@
-
-
 /*Estilos responsive*/
 
 
 /*---tablet---*/
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
 
 
-        main{
-                .row{
-                .wrapper{
+    main {
+        .row {
+            .wrapper {
 
-                        .slides{
-                        
-                .main{
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-                    align-items:center;
-    
-                img{ 
-                    height: 420px;
-                    width: 350px;
-                    
-                                }
-                            }
+                .slides {
+
+                    .main {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        align-items: center;
+
+                        img {
+                            height: 420px;
+                            width: 350px;
+
                         }
+                    }
                 }
+            }
+        }
+
+
+        .service {
+            width: 100%;
+            padding: 100px 0px;
+            background-color: nth($list: $colors, $n: 3);
+
+
+
+
+
+            .box {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                min-height: 400px;
+
+            }
+        }
+
+
+
+
+
+        main {
+            .wrapper2 {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                justify-content: center;
+
+                img {
+                    height: 530px;
+                    width: 450px;
+                }
+
+            }
+        }
+
+
+
+
+        main {
+
+            .wrapper {
+
+                .portfolio {
+
+                    .container-card {
+                        display: grid;
+                        grid-template-columns: repeat(1, 1fr);
+                        width: 50%;
+
+                        .video-youtube {
+                            .card {
+
+                                iframe {
+                                    width: 100%;
+                                    height: 300px;
+                                }
+
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+        main {
+
+
+            .container-contact {
+                gap: 15px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+                img {
+                    height: 430px;
+                    width: 310px;
+                    display: grid;
+                    justify-content: center;
+                    margin: auto;
+
+                }
+
+                .contact-form {
+
+                    h4 {
+                        text-align: justify;
+                    }
+
+
+
+                    form {
+                        margin-top: 15px;
+                        text-align: center;
+
+                        input {
+                            justify-content: center;
+                            align-items: center;
+
+                        }
+
+                        textarea {
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        .btn-submit {
+                            height: auto;
+                            width: 100px;
+                        }
+                    }
+
+                }
+
             }
 
 
-            .service{
+
+        }
+
+
+    }
+
+
+    /*---mobile----*/
+
+    @media screen and (max-width: 768px) {
+
+
+
+        main {
+            .row {
+                .wrapper {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    align-items: center;
+
+                    .slides {
+
+                        .main {
+                            display: grid;
+                            grid-template-columns: repeat(1, 1fr);
+                            align-items: center;
+
+
+
+
+
+
+
+                            img {
+                                width: 380px;
+                                height: 350px;
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            .service {
                 width: 100%;
                 padding: 100px 0px;
-                background-color: nth($list: $colors, $n:3 );
-
-    
-    
+                background-color: nth($list: $colors, $n: 3);
 
 
-            .box{
+
+
+
+                .box {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
                     min-height: 400px;
-
-                                        }
-                                            }
-    
-    
-
-
-
-                main{
-                    .wrapper2{
-                        display: grid;
-                        grid-template-columns: repeat(2,1fr);
-                        justify-content: center;
-                            
-                                img{
-                                    height: 530px;
-                                    width: 450px;
-                                    }
-                            
-                                }
-                            }
-
-
-
-
-                            main{
-
-                                .wrapper{
-                                    
-                                .portfolio{
-                            
-                                        .container-card{
-                                            display: grid;
-                                            grid-template-columns: repeat(1,1fr);
-                                            width: 50%;
-                            
-                                            .video-youtube{
-                                                .card{ 
-                                                
-                                                    iframe{ 
-                                                        width: 100%;
-                                                        height: 300px;}
-                                            
-                                                                    }
-
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-
-
-
-
-                            main{
-
-                                
-                                    .container-contact{
-                                        gap: 15px;
-                                        display: grid;
-                                        grid-template-columns: repeat(2,1fr); 
-                            
-                                        img{   
-                                            height: 430px;
-                                            width: 310px;
-                                            display: grid;
-                                            justify-content: center;
-                                            margin: auto;
-                            
-                                        }
-                            
-                                        .contact-form{ 
-
-                                            h4{
-                                                text-align:justify;}
-                                    
-                            
-                                            
-                                                form{
-                                                    margin-top: 15px;
-                                                    text-align: center;
-                            
-                                                    input{
-                                                        justify-content: center;
-                                                        align-items: center;
-                            
-                                                            }  
-                            
-                                                    textarea{
-                                                        justify-content: center;
-                                                        align-items: center;
-                                                        }
-                            
-                                                        .btn-submit{
-                                                            height: auto;
-                                                            width: 100px;
-                                                                }
-                                                        }
-                            
-                                            }
-                            
-                                        }
-                                        
-                                        
-                            
-                            }
-                            
-                            
-                } 
-    
-
-    /*---mobile----*/
-    
-    @media screen and (max-width: 768px){
-    
-
-    
-                    main{
-                        .row{
-                        .wrapper{display: grid;
-                            grid-template-columns: repeat(1, 1fr);
-                            align-items: center ;
-                            
-                            .slides{
-        
-                        .main{
-                            display: grid;
-                            grid-template-columns: repeat(1, 1fr);
-                            align-items: center ;
-        
-
-
-
-
-
-                            
-                        img{ 
-                                width: 380px;
-                                height: 350px;
-
-                                        }
-                                    }
-                                    }
-                        }
-                    }
-
-                    .service{
-                        width: 100%;
-                        padding: 100px 0px;
-                        background-color: nth($list: $colors, $n:3 );
-        
-            
-            
-        
-        
-                    .box{
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            align-items: center;
-                            min-height: 400px;}
-
-
-
-                            .card-box{
-                                width: 50%;
-                            }
-                                                    }
-
-
-
-
-
-                }    
-
-    
-    .fixed{
-        width: 10%;
-    }
-    
-    
-
-    
-    
-
-    main{
-        .wrapper2{
-            display: grid;
-            grid-template-columns: repeat(1,1fr);
-            justify-content: center;
-            align-items: center;
-            height: auto;
-                
-                    img{
-                        height: 330px;
-                        width: 310px;
-                        justify-items: center;
-                        display: block;
-                        margin: auto;
-                        margin-top: 25px;
-                        }
-                        .about-info{ margin-bottom: 500px;
-                            h2{
-                                font-size: 2em;
-                                color: nth($list: $colors, $n:1);
-                                font-weight:600;
-                            }
-                        }
-
-
-                    }
                 }
 
 
 
-
-                                    main{
-
-                                        .wrapper{
-                                            
-                                        .portfolio{
-                                    
-                                                .container-card{
-                                                    display: grid;
-                                                    grid-template-columns: repeat(1,1fr);
-                                                    width: 50%;
-                                    
-                                                    .video-youtube{
-                                                        .card{ 
-                                                        
-                                                            iframe{ 
-                                                                width: 100%;
-                                                                height: 100px;}
-                                                    
-                                                                            }
-        
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
+                .card-box {
+                    width: 50%;
+                }
+            }
 
 
 
 
-                                    main{
 
-                                
-                                        .container-contact{
-                                            display: flex;
-                                            flex-direction: column;
-                                            height: auto;
-                                
-                                            img{   
-                                                height: 430px;
-                                                width: 310px;
-                                                display: flex;
-                                                justify-content: center;
-                                                display: block;
-                                                margin: auto;
-    
-                                
-                                            }
-                                
-                                            .contact-form{ 
-    
-                                                h4{
-                                                    margin-top: 15px;
-                                                    text-align: center;
-                                            }
-                                        
-                                
-                                                
-                                                    form{
-                                
-                                                        display: flex;
-                                                        flex-direction: column;
-                                
-                                                        input{
-                                                            display: flex;
-                                                            justify-content: center;
-                                                            align-items: center;
-                                
-                                                                }  
-                                
-                                                        
-                                
-                                                            .btn-submit{
-                                                                height: auto;
-                                                                justify-content:center ;
-                                                                text-align: center;
-                                                                    }
-                                                            }
-                                
-                                                }
-                                
-                                            }
-                                
-                                
+        }
+
+
+        .fixed {
+            width: 10%;
+        }
+
+
+
+
+
+
+        main {
+            .wrapper2 {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                justify-content: center;
+                align-items: center;
+                height: auto;
+
+                img {
+                    height: 330px;
+                    width: 310px;
+                    justify-items: center;
+                    display: block;
+                    margin: auto;
+                    margin-top: 25px;
+                }
+
+                .about-info {
+                    margin-bottom: 500px;
+
+                    h2 {
+                        font-size: 2em;
+                        color: nth($list: $colors, $n: 1);
+                        font-weight: 600;
+                    }
+                }
+
+
+            }
+        }
+
+
+
+
+        main {
+
+            .wrapper {
+
+                .portfolio {
+
+                    .container-card {
+                        display: grid;
+                        grid-template-columns: repeat(1, 1fr);
+                        width: 50%;
+
+                        .video-youtube {
+                            .card {
+
+                                iframe {
+                                    width: 100%;
+                                    height: 100px;
                                 }
 
-    
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+
+        main {
+
+
+            .container-contact {
+                display: flex;
+                flex-direction: column;
+                height: auto;
+
+                img {
+                    height: 430px;
+                    width: 310px;
+                    display: flex;
+                    justify-content: center;
+                    display: block;
+                    margin: auto;
+
+
+                }
+
+                .contact-form {
+
+                    h4 {
+                        margin-top: 15px;
+                        text-align: center;
+                    }
+
+
+
+                    form {
+
+                        display: flex;
+                        flex-direction: column;
+
+                        input {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                        }
+
+
+
+                        .btn-submit {
+                            height: auto;
+                            justify-content: center;
+                            text-align: center;
+                        }
+                    }
+
+                }
+
+            }
+
+
+        }
+
+
     }
 
 
-        
-    .footer{
-        display: grid;
+
+    .footer {
+        display: flex;
         align-items: center;
         justify-content: center;
-        background-color: nth($list: $colors, $n:4 );
-
-        
-            .row{
-                    .sotial-networks{
-                        width: 100%;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-wrap: wrap; }
-                        
-                        .icon {
-                            
-                            position: relative;
-                            width: 40px;
-                            height: 40px;
-                            margin: 20px;
-                            border-radius: 20px;
-                            transition: all .8s;
-                            cursor: pointer; }
+        background-color: nth($list: $colors, $n: 4);
 
 
-                            .fixed{
-                                position: fixed;
-                                width: 50px;
-                                bottom: 50px;
-                                right: 20px;
-        
-                    
-                                a{
-                                        img{
-                                            width: 30px;
-                                            right: 150px;
-                                                            }
-                                    }
-        
-                        }
-        
+        .row {
+            .sotial-networks {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .icon {
+
+                position: relative;
+                width: 40px;
+                height: 40px;
+                margin: 20px;
+                border-radius: 20px;
+                transition: all .8s;
+                cursor: pointer;
+            }
 
 
+            .fixed {
+                position: fixed;
+                width: 50px;
+                bottom: 50px;
+                right: 20px;
 
 
-                        
-                        }
-
+                a {
+                    img {
+                        width: 30px;
+                        right: 150px;
                     }
+                }
 
-                
+            }
+
+
+
+
+
+
+        }
+
+    }
+
+
 
 
 
@@ -411,3 +418,22 @@
 }
 
 
+@media only screen and (min-width: 500px) {
+    .band {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .item-1 {
+        grid-column: 1 / span 2;
+    }
+
+    .item-1 h2 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    .band {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

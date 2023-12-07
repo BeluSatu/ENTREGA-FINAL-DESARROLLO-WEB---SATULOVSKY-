@@ -1,12 +1,12 @@
 @import "utilities/reset";
-@import "components/html";
+@import "./utilities/html";
 @import "./utilities/variables";
 @import "./utilities/list";
 @import "./utilities/mixins.scss";
+@import "./components/header";
 
-
-@import "pages/header";
 @import "pages/main-index";
+@import "pages/prensa";
 @import "pages/main-quiensoy";
 @import "pages/main-portfolio";
 @import "./pages/main-contact";

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper-press {
+    width: 100%;
+    background-color: nth($list: $colors, $n: 2);
+    color: #fff;
+    margin-top: 3rem;
+
+
+    .band {
+        width: 90%;
+        max-width: 1240px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: auto;
+        grid-gap: 20px;
+
+
+        .card {
+            background: white;
+            text-decoration: none;
+            color: #444;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+            position: relative;
+            top: 0;
+            transition: all .1s ease-in;
+
+            &:hover {
+                top: -2px;
+                box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+            }
+
+            .thumb {
+                padding-bottom: 60%;
+                background-size: cover;
+                background-position: center center;
+            }
+
+            article {
+                padding: 20px;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+
+                h2 {
+                    font-size: 20px;
+                    margin: 0;
+                }
+
+                span {
+                    font-size: 16px;
+                    color: #252525;
+                    margin: 2em 0 0 0;
+
+                    p {
+                        flex: 1;
+                        line-height: 1.4;
+                    }
+                }
+
+                a {
+                    button {
+                        padding: 10px 20px;
+                        background-color: nth($list: $colors, $n: 4);
+                        border: none;
+                        border-radius: 20px;
+                        margin-top: 10px;
+                        cursor: $cursor-principal;
+                        -webkit-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+                        -moz-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+                        box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+
+                        &:hover {
+                            background-color: nth($list: $colors, $n: 3);
+                            box-shadow: none;
+                        }
+                    }
+                }
+
+
+            }
+
+        }
+
+    }
+}

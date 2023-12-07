@@ -1,94 +1,95 @@
 /*Estilos contacto*/
 
 
-main{
+main {
 
-    .contact-section{
-                        padding: 3em;
-                        background-color:nth($list: $colors, $n:2 );
-                        color: #fff;    
-            
-        .contact-heading{
+    .contact-section {
+        padding: 3em;
+        background-color: nth($list: $colors, $n: 2);
+        color: #fff;
 
-                h2{
-                    font-size: 2.5em;
-                    color: #fff;
-                    margin-left: 8px;
-                    margin-top: 50px;
-                }
+        .contact-heading {
 
-                .divider{
-                    height: 4px;
-                    width: 70px;
-                    background-color:nth($list: $colors, $n:4 );
-                    margin-top: 3px;
-                    margin-bottom: 2em;
-                    margin-left: 8px;
-                }
+            h1 {
+                font-size: 2.5em;
+                color: #fff;
+                margin-left: 8px;
+                margin-top: 50px;
+            }
+
+            .divider {
+                height: 4px;
+                width: 70px;
+                background-color: nth($list: $colors, $n: 4);
+                margin-top: 3px;
+                margin-bottom: 2em;
+                margin-left: 8px;
             }
         }
+    }
 
-        .container-contact{
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            margin-top: 10em;
-            height: 80vh;
+    .container-contact {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        margin-top: 10em;
+        height: 80vh;
 
-            img{   width: 490px;
-                height: 580px;
-                bottom: 0;
-                box-shadow: 9px 9px 41px -10px rgba(0,0,0,0.82);
-            -webkit-box-shadow: 9px 9px 41px -10px rgba(0,0,0,0.82);
-            -moz-box-shadow: 9px 9px 41px -10px rgba(0,0,0,0.82);
+        img {
+            width: 490px;
+            height: 580px;
+            bottom: 0;
+            box-shadow: 9px 9px 41px -10px rgba(0, 0, 0, 0.82);
+            -webkit-box-shadow: 9px 9px 41px -10px rgba(0, 0, 0, 0.82);
+            -moz-box-shadow: 9px 9px 41px -10px rgba(0, 0, 0, 0.82);
 
-            }
+        }
 
-            .contact-form{ 
-                        margin-top: 0;
-                        text-align: center;
-                        width: 100%;
+        .contact-form {
+            margin-top: 0;
+            text-align: center;
+            width: 100%;
 
-                
-                    form{
 
-                        display: flex;
-                        flex-direction: column;
-                        width: 100%;
-                        justify-content: center;
-                        align-items: center;
-                        input{
-                            padding: 10px 20px;
-                            margin-bottom: 1em;
-                            background: none;
-                            border: none;
-                            border-bottom: 1px solid #fff;
-                            color: #fff;
+            form {
 
-                                }  
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
 
-                        textarea{
-                            height: 150px;
-                            padding: 1.5em;
-                            background: none;
-                            border: 1px solid #fff;
-                            color: #fff;
-                            }
-
-                            button{
-                                padding: 10px 20px;
-                                margin: 1em;
-                                border-radius: 20px;
-                                border: none;
-                                text-transform: uppercase;
-                                background-color:nth($list: $colors, $n:4 );
-                                    }
-                            }
+                input {
+                    padding: 10px 20px;
+                    margin-bottom: 1em;
+                    background: none;
+                    border: none;
+                    border-bottom: 1px solid #fff;
+                    color: #fff;
 
                 }
 
+                textarea {
+                    height: 150px;
+                    padding: 1.5em;
+                    background: none;
+                    border: 1px solid #fff;
+                    color: #fff;
+                }
+
+                button {
+                    padding: 10px 20px;
+                    margin: 1em;
+                    border-radius: 20px;
+                    border: none;
+                    text-transform: uppercase;
+                    background-color: nth($list: $colors, $n: 4);
+                }
             }
+
+        }
+
+    }
 
 
 }
-
